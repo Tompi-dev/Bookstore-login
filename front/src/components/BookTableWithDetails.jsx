@@ -15,7 +15,7 @@ const BookTableWithDetails = ({ seed, lang, likes, reviews, setPage}) => {
 
   const fetchBooksByPage = async (pageNum) => {
     try {
-      const res = await axios.get('http://localhost:8000/api/books/', {
+      const res = await axios.get('https://bookstore-backend-sszl.onrender.com/api/books/', {
         params: { seed, lang, page: pageNum, likes, reviews },
       });
       const data = res.data;

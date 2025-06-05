@@ -11,7 +11,7 @@ const HomePage = () => {
 
   const exportToCSV = async () => {
   try {
-    const res = await fetch(`http://localhost:8000/api/books/export?seed=${seed}&lang=${lang}&likes=${likes}&reviews=${reviews}&pages=${page}`, {
+    const res = await fetch(`https://bookstore-backend-sszl.onrender.com/api/books/export?seed=${seed}&lang=${lang}&likes=${likes}&reviews=${reviews}&pages=${page}`, {
       method: 'GET',
     });
 
