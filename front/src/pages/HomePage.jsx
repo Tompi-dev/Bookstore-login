@@ -95,7 +95,7 @@ const HomePage = () => {
             max="10"
             step="0.1"
             value={likes}
-            onChange={(e) => {setLikes(parseFloat(e.target.value)), console.log(likes)}}
+            onChange={(e) => {setLikes(parseFloat(e.target.value))}}
             className="w-full accent-blue-500"
           />
         </div>
