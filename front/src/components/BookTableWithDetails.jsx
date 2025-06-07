@@ -71,12 +71,11 @@ const BookTableWithDetails = ({ seed, lang, likes, reviews, setPage}) => {
       <InfiniteScroll
         dataLength={books.length}
         next={fetchMore}
-        // hasMore={true}
         hasMore={hasMore}
         loader={<p className="text-center text-xs">Loading more books...</p>}
         scrollableTarget="scrollableDiv"
       >
-        <table className="w-full border border-gray-200 text-xs">
+        <table className="w-full border bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100">
           <thead className="bg-gray-100">
             <tr>
               <th className="px-2 py-1 text-left">#</th>

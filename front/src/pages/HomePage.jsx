@@ -27,7 +27,7 @@ const HomePage = () => {
     document.body.appendChild(a);
     a.click();
     a.remove();
-    window.URL.revokeObjectURL(url); // cleanup
+    window.URL.revokeObjectURL(url); 
 
   } catch (err) {
     console.error('CSV export failed:', err);
@@ -47,7 +47,7 @@ const HomePage = () => {
       
                  <button
   onClick={exportToCSV}
-  className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 text-sm"
+  className="px-4 py-2 bg-green-600  rounded hover:bg-green-700 text-sm"
 >
   Export to CSV
 </button>
@@ -57,7 +57,7 @@ const HomePage = () => {
           <select
             value={lang}
             onChange={(e) => setLang(e.target.value)}
-            className="border border-gray-300 p-2 rounded w-40 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="border border-gray-400 bg-white text-gray-800 p-2 rounded w-40 focus:outline-none focus:ring-2 focus:ring-blue-500"
           >
             <option value="" disabled hidden>Select Language</option>
             <option value="en_US">English (US)</option>
@@ -74,7 +74,7 @@ const HomePage = () => {
               type="number"
               value={seed}
               onChange={(e) => setSeed(Number(e.target.value))}
-              className="border p-2 rounded w-24"
+              className="border border-gray-400 bg-white text-gray-800 p-2 rounded w-40 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <button
               onClick={handleRandomSeed}
@@ -97,7 +97,7 @@ const HomePage = () => {
             step="0.1"
             value={likes}
             onChange={(e) => {setLikes(parseFloat(e.target.value))}}
-            className="w-full accent-blue-500"
+            className="w-full accent-blue-500 border border-gray-400 bg-white text-gray-800 p-2 rounded w-40 focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
 
@@ -111,7 +111,7 @@ const HomePage = () => {
             step={0.1}
             value={reviews}
             onChange={(e) => setReviews(parseFloat(e.target.value))}
-            className="border p-2 rounded w-20"
+            className="border p-2 rounded w-20 border border-gray-400 bg-white text-gray-800 p-2 rounded w-40 focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
       </div>
