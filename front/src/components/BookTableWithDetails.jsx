@@ -64,11 +64,9 @@ const BookTableWithDetails = ({ seed, lang, likes, reviews, setPage}) => {
 
   return (
     <div id="scrollableDiv"
-      style={{
-        height: '80vh',
-        overflow: 'auto',
-      }}
-      className="border border-gray-300 rounded">
+  className="h-[80vh] overflow-auto border border-gray-300 rounded bg-white dark:bg-gray-800 text-sm"
+>
+
 
       <InfiniteScroll
         dataLength={books.length}

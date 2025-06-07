@@ -45,12 +45,13 @@ const HomePage = () => {
       <div className="flex flex-wrap gap-6 mb-6 items-end">
 
       
-                  <button
+                 <button
   onClick={exportToCSV}
-  className="px-4 py-2 bg-green-600 text-black rounded hover:bg-green-700 text-sm"
+  className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 text-sm"
 >
   Export to CSV
 </button>
+
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">Language</label>
           <select
