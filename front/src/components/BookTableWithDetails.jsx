@@ -75,14 +75,14 @@ const BookTableWithDetails = ({ seed, lang, likes, reviews, setPage}) => {
         loader={<p className="text-center text-xs">Loading more books...</p>}
         scrollableTarget="scrollableDiv"
       >
-        <table className="w-full border bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100">
-          <thead className="bg-gray-100">
+        <table className="w-full border bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100 ">
+          <thead className="bg-gray-200  dark:bg-gray-900 text-gray-800 dark:text-white">
             <tr>
-              <th className="px-2 py-1 text-left">#</th>
-              <th className="px-2 py-1 text-left">ISBN</th>
-              <th className="px-2 py-1 text-left">Title</th>
-              <th className="px-2 py-1 text-left">Author(s)</th>
-              <th className="px-2 py-1 text-left">Publisher</th>
+              <th className="px-2 py-2 text-left font-semibold sticky top-0 z-10 bg-gray-200 dark:bg-gray-900">#</th>
+              <th className="px-2 py-2 text-left font-semibold sticky top-0 z-10 bg-gray-200 dark:bg-gray-900">ISBN</th>
+              <th className="px-2 py-2 text-left font-semibold sticky top-0 z-10 bg-gray-200 dark:bg-gray-900">Title</th>
+              <th className="px-2 py-2 text-left font-semibold sticky top-0 z-10 bg-gray-200 dark:bg-gray-900">Author(s)</th>
+              <th className="px-2 py-2 text-left font-semibold sticky top-0 z-10 bg-gray-200 dark:bg-gray-900">Publisher</th>
             </tr>
           </thead>
           <tbody>
