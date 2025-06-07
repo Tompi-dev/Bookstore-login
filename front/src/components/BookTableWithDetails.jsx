@@ -89,7 +89,7 @@ const BookTableWithDetails = ({ seed, lang, likes, reviews, setPage}) => {
             {books.map((book) => (
               <React.Fragment key={book.index}>
                 <tr
-                  className="border-t hover:bg-gray-50 cursor-pointer"
+                  className="border-t cursor-pointer transition-transform hover:scale-[1.01] hover:bg-blue-100 dark:hover:bg-blue-900"
                   onClick={() =>
                     setExpandedIndex(expandedIndex === book.index ? null : book.index)
                   }
